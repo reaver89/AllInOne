@@ -1,8 +1,9 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using WebApplication;
 
-[assembly: OwinStartupAttribute(typeof(WebApplication2.Startup))]
-namespace WebApplication2
+[assembly: OwinStartup(typeof(Startup))]
+namespace WebApplication
 {
     public partial class Startup
     {

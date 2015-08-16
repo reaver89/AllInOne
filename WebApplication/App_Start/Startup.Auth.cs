@@ -3,11 +3,10 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Owin;
-using WebApplication2.Models;
+using WebApplication.Models;
 
-namespace WebApplication2
+namespace WebApplication
 {
     public partial class Startup
     {

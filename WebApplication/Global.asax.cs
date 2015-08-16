@@ -4,9 +4,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
-using WebApplication2.Controllers;
 
-namespace WebApplication2
+namespace WebApplication
 {
     public class MvcApplication : HttpApplication
     {
