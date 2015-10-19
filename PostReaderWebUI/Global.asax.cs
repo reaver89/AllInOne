@@ -4,6 +4,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
+using PostReader.Data.Context;
+using PostReader.Data.Repositories;
 
 namespace PostReaderWebUI
 {
@@ -20,6 +22,7 @@ namespace PostReaderWebUI
 
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterFilterProvider();
+            builder.RegisterType<SocialAccountRepository>().As<ISocialAccountRepository>();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
