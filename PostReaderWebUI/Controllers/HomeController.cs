@@ -9,16 +9,17 @@ namespace PostReaderWebUI.Controllers
             return View();
         }
 
+
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "What is this site for?";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "For any questions please contact Vladimir Mackhnevich.";
 
             return View();
         }

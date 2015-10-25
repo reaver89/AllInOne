@@ -22,7 +22,6 @@ namespace PostReaderWebUI
 
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterFilterProvider();
-            builder.RegisterType<SocialAccountRepository>().As<ISocialAccountRepository>();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

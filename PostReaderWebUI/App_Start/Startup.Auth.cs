@@ -5,6 +5,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
 using PostReaderWebUI.Models;
+using Microsoft.Owin.Security.Google;
 
 namespace PostReaderWebUI
 {
@@ -57,11 +58,13 @@ namespace PostReaderWebUI
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseVkontakteAuthentication("5112234", "JvaTsbEcO8FQz7LL0Tr4", "friends,video");
+
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "869908290164-kbbh0jd8j1fou5s55jinclcmhc97umof.apps.googleusercontent.com",
+                ClientSecret = "W1J59IXgjK2mLFNwBJHuZlVY"
+            });
         }
     }
 }

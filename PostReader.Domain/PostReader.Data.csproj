@@ -50,18 +50,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\ApplicationDbContext.cs" />
-    <Compile Include="Models\SocialAccount.cs" />
-    <Compile Include="Models\SocialAccountType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\IBaseRepository.cs" />
-    <Compile Include="Repositories\ISocialAccountRepository.cs" />
-    <Compile Include="Repositories\SocialAccountRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
